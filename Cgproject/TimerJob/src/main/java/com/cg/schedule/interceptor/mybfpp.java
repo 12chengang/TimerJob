@@ -5,6 +5,9 @@ import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 测试BeanFactoryPostProcessor
+ */
 @Configuration
 public class mybfpp implements BeanFactoryPostProcessor {
     @Override

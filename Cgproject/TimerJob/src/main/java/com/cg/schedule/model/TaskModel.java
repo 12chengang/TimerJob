@@ -3,6 +3,7 @@ package com.cg.schedule.model;
 import com.cg.common.model.BaseModel;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class TaskModel extends BaseModel implements Serializable {
 

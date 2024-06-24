@@ -73,7 +73,7 @@ migrator:
 logging:
   config: classpath:logback.xml
   level:
-    com.bitoffer.xtimer: info
+    com.cg.schedule: info
     org.springframework: warn
 
 

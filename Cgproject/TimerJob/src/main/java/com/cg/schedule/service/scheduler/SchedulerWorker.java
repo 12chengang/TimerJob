@@ -20,6 +20,7 @@ public class SchedulerWorker {
     SchedulerAppConf schedulerAppConf;
 
     @Scheduled(fixedRate = 1000)
+    //避免一些边界，如果00分00秒调度，下一次59秒调度，就会导致后面的01分都有误差，所以就暴力1秒
     public void scheduledTask() {
         log.info("任务执行时间：" + LocalDateTime.now());
         handleSlices();

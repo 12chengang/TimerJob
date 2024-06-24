@@ -57,6 +57,7 @@ public class MigrateManagerImpl implements MigratorManager{
             throw new BusinessException(ErrorCode.SYSTEM_ERROR,"解析cron表达式失败："+timerModel.getCron());
         }
         Date now = new Date();
+        //为什么是2个小时？为了解决当第一次迁移时失败，第二次迁移还能迁移回前面一个小时的任务，因为我的迁移周期的1个小时，所以每次都会重复1个小时的数据迁移，这样就可以一定程度上避免第一次失败。
         Date end = TimerUtils.GetForwardTwoMigrateStepEnd(now,migratorAppConf.getMigrateStepMinutes());
 
         List<Long> executeTimes = TimerUtils.GetCronNextsBetween(cronExpression,now,end);

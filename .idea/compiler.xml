@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bitstorm-svr-api" />
+        <module name="bitstorm-svr-common" />
+        <module name="bitstorm-svr-leaf" />
+        <module name="bitstorm-svr-user" />
+        <module name="bitstorm-svr-xtimer" />
+        <module name="bitstorm-svr-shorturlx" />
+        <module name="bitstorm-svr-testconsumer" />
+        <module name="bitstorm-svr-lottery" />
+        <module name="bitstorm-svr-asyncflow" />
+        <module name="bitstorm-svr-seckill" />
+        <module name="bitstorm-svr-gateway" />
+        <module name="bitstorm-svr-demo" />
+        <module name="bitstorm-svr-improve" />
+        <module name="bitstorm-svr-auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bitstorm-svr" target="1.8" />
+      <module name="bitstorm-svr-api" target="1.5" />
+      <module name="bitstorm-svr-asyncflow" target="1.5" />
+      <module name="bitstorm-svr-auth" target="1.5" />
+      <module name="bitstorm-svr-common" target="1.5" />
+      <module name="bitstorm-svr-demo" target="1.5" />
+      <module name="bitstorm-svr-gateway" target="1.5" />
+      <module name="bitstorm-svr-improve" target="1.5" />
+      <module name="bitstorm-svr-leaf" target="1.5" />
+      <module name="bitstorm-svr-lottery" target="1.5" />
+      <module name="bitstorm-svr-seckill" target="1.5" />
+      <module name="bitstorm-svr-shorturlx" target="1.5" />
+      <module name="bitstorm-svr-testconsumer" target="1.5" />
+      <module name="bitstorm-svr-user" target="1.5" />
+      <module name="bitstorm-svr-xtimer" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
